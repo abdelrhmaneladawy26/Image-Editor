@@ -14,7 +14,7 @@ let imgBox = document.querySelector(".img-box");
 const canvas = document.getElementById("canvas");
 const conText = canvas.getContext("2d")
 
-
+// reset
 function resetValue() {
     img.style.filter = "none";
     saturate.value = "100";
@@ -31,6 +31,7 @@ window.onload = function () {
     reset.style.display = "none";
     imgBox.style.display = "none";
 }
+
 upload.onchange = function () {
     download.style.display = "block";
     reset.style.display = "block";
@@ -62,6 +63,7 @@ filters.forEach(filter => {
         `;
          conText.drawImage(img, 0, 0, canvas.width, canvas.height);
     })
+
 })
 
 function dow() {
